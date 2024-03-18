@@ -1,0 +1,11 @@
+number1 = 10 # 上辺：10cm
+number2 = 20 # 下辺：20cm
+number3 = 5 # 高さ：5cm
+tani = "㎠"
+ 
+ # 台形の面積 # 公式：台形の面積 =(上辺+下辺)×高さ÷2
+area = ((number1 + number2)* number3 )/2
+
+print (str(area) + str(tani))
+
+75.0㎠ 
