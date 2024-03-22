@@ -1,0 +1,9 @@
+def caculated_total(price):
+
+  # 商品＋消費税の価格
+  total = price * 1.1
+  return total
+
+price = 1000
+total_price = caculated_total(price)
+print(f"{total_price}円です")
