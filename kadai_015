@@ -1,0 +1,20 @@
+class Human:
+  def __init__(self, name ="", age = 0):
+    self.name = name
+    self.age = age
+
+  def set_name(self,name):
+    self.name = name
+
+  def set_age(self,age):
+    self.age = age
+
+  def printinfo(self):
+    print(f"名前は: {self.name}, 年齢は: {self.age}")
+
+human = Human()
+
+human.set_name("あきこ")
+human.set_age(20)
+
+human.printinfo()
