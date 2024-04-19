@@ -1,13 +1,16 @@
-import openpyxl
-workbook = openpyxl.Workbook()
-
 # リストの定義
 array = ["水", "金", "地", "火", "木", "土", "天", "海", "冥"]
 
-# インデックス初期化
-element = 0
+# 出力回数をカウントするための変数
+count = 0
+
+# 最大出力回数を設定
+max_count = 2
 
 # Whileループとifを使ってリストの内容を2回出力
-while element < len(array) * 2:
-    print(array[element % len(array)])  # リストの長さで剰余を取ることで範囲内に収める
-    element += 1
+while count < max_count:
+    # arrayの各要素を出力
+    for element in array:
+        print(element)
+    # 1回出力が終わるごとにカウントを増やす
+    count += 1
