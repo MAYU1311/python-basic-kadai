@@ -1,0 +1,13 @@
+import openpyxl
+workbook = openpyxl.Workbook()
+
+# リストの定義
+array = ["水", "金", "地", "火", "木", "土", "天", "海", "冥"]
+
+# インデックス初期化
+element = 0
+
+# Whileループとifを使ってリストの内容を2回出力
+while element < len(array) * 2:
+    print(array[element % len(array)])  # リストの長さで剰余を取ることで範囲内に収める
+    element += 1
